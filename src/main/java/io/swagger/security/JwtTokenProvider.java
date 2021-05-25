@@ -40,7 +40,7 @@ public class JwtTokenProvider {
     private long validityInMilliseconds = 3600000; // 1h
 
     @Autowired
-    private MyUserDetailsService myUserDetails;
+    private CustomUserDetailService myUserDetails;
 
     @PostConstruct
     protected void init() {
